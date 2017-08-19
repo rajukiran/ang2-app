@@ -10,11 +10,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
 import "hammerjs";
+import { NewsComponent } from './news/news.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: 'dashboard',  component: DashboardComponent },
-  { path: 'card',  component: CardComponent }
+  { path: 'card',  component: CardComponent },
+  { path: 'news',  component: NewsComponent }
 ];
 
 @NgModule({
@@ -22,7 +24,8 @@ const routes: Routes = [
     AppComponent,
     CardComponent,
     DashboardComponent,
-    SidenavComponent
+    SidenavComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes),BrowserAnimationsModule,MaterialModule,
