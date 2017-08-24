@@ -1,0 +1,247 @@
+<div class="wrapper">
+
+  <!-- Main Content -->
+  <div class="page-wrapper">
+    <div class="container-fluid">
+      <!-- Title -->
+
+      <!-- /Title -->
+      <!-- Row -->
+      <div class="row">
+        <div class="col-sm-12">
+
+
+
+
+       <ul class="nav nav-tabs" style="padding: 4px 0px 0;margin-left: -9px;margin-right: -9px;background: #fff;border: 1px solid rgba(33, 33, 33, 0.1);margin-top: 14px;">
+    <li class="active"><a href="TransactionReport.html">Transaction Report</a></li>
+      <li><a href="SuccesReport.html">Success Report</a></li>
+      <li><a href="FailedReport.html">Failed Report</a></li>
+
+    </ul>
+
+
+
+
+          <div class="panel panel-default card-view">
+
+
+
+
+            <div class="panel-wrapper collapse in">
+              <div class="panel-body">
+                <div class="table-wrap">
+                  <div class="table-responsive">
+
+                      <div class="col-md-8" style="position: absolute;left:0px;">
+            <div class="col-md-4" style="padding: 0;">
+              <div class="form-group m-t-40 row">
+                <h5>
+                  <label for="example-text-input" class="col-md-4 col-form-label" style="text-align: right;padding-top:2px;white-space: nowrap;"> From Date</label>
+                </h5>
+                <div class="col-md-8" style="padding-left: 0px;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="datepicker-autoclose" placeholder="MM/DD/YYYY" style="cursor:pointer;    height: 29px;
+    border: 1px #b7b7b7 solid;">
+                    <span class="input-group-addon" style="border: 1px #b7b7b7 solid;"><i class="fa fa-calendar"></i></span> </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+              <div class="form-group m-t-40 row">
+                <h5>
+                  <label for="example-text-input" class="col-md-4 col-form-label" style="text-align: right;padding-top:2px;white-space: nowrap;">To Date</label>
+                </h5>
+                <div class="col-md-8" style="padding: 0px;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="datepicker-autoclose1" placeholder="MM/DD/YYYY" style="cursor:pointer;height:29px;border: 1px #b7b7b7 solid;">
+                    <span class="input-group-addon" style="border: 1px #b7b7b7 solid;"><i class="fa fa-calendar"></i></span> </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+            <button class="btn  btn-primary" style="    padding:2px 20px;
+    margin-top: 0px;">Submit Details</button>
+          </div>
+          </div>
+
+
+                    <table id="example" class="table table-hover display" >
+
+
+
+
+                      <thead>
+
+
+                        <tr>
+                          <th>ID</th>
+                          <th>MOBILE</th>
+                          <th>OPERATOR</th>
+                          <th>AMOUNT</th>
+                          <th>YOUR COST</th>
+                          <th>STATUS</th>
+                          <th>BALANCE</th>
+                          <th>TIME</th>
+
+
+
+                        </tr>
+                      </thead>
+                      <tbody>
+
+
+
+                        <tr>
+                          <td><i class="more-less glyphicon glyphicon-plus" data-toggle="modal" data-target="#ReciptShow" style="cursor:pointer;"></i>188156786</td>
+                          <td>9866236990</td>
+                          <td>Airtel</td>
+                          <td>10</td>
+                          <td>10</td>
+                           <td><span class="label label-success">success</span></td>
+                      <td>990</td>
+                    <td>04-08-2017 10:31:30 AM<button class="btn  btn-primary" style="padding: 0px 15px;margin-left: 20px;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">DISPUTE</button></td>
+
+                        </tr>
+
+                         <tr>
+                          <td><i class="more-less glyphicon glyphicon-plus"></i>1955885255</td>
+                          <td>9502111655</td>
+                          <td>idea</td>
+                          <td>20</td>
+                          <td>20</td>
+                           <td><span class="label label-success">success</span></td>
+                      <td>990</td>
+                    <td>04-08-2017 10:31:30 AM<button class="btn  btn-primary" style="padding: 0px 15px;margin-left: 20px;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">DISPUTE</button></td>
+
+                        </tr>
+
+                         <tr>
+                          <td><i class="more-less glyphicon glyphicon-plus"></i>1752255223</td>
+                          <td>9866285181</td>
+                          <td>vodafone</td>
+                          <td>30</td>
+                          <td>40</td>
+                           <td><span class="label label-success">success</span></td>
+                      <td>990</td>
+                    <td>04-08-2017 10:31:30 AM<button class="btn  btn-primary" style="padding: 0px 15px;margin-left: 20px;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">DISPUTE</button></td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Row -->
+    </div>
+    <!-- Footer -->
+  
+    <!-- /Footer -->
+  </div>
+  <!-- /Main Content -->
+</div>
+
+<div class="modal fade in" id="ReciptShow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+														<h5 class="modal-title" id="exampleModalLabel1">Print / Download Receipt of Transaction ID : 188246929</h5>
+													</div>
+													<div class="modal-body">
+														<h3 style="line-height:15px;">PREVIEW</h3>
+
+                                                        <div>
+
+                                                        <div class="dt-buttons" style="margin-top: -22px;">
+                                                        <a class="dt-button" href="#"><span>Print Receipt</span></a>
+                                                        <a class="dt-button" href="#"><span>Download Receipt</span></a>
+                                                        <a class="dt-button" href="#"><span>Email Receipt</span></a>
+                                                        </div>
+
+                                                        </div>
+
+                                                        <hr style="margin-bottom:10px;">
+
+                                                        <div class="col-md-6"><h4>RECEIPT # : R - 188246929</h4></div>
+                                                        <div class="col-md-6"><h6 style="line-height: 30px; text-align:right;">Date : 10-08-2017</h6></div>
+
+
+                                                    <div class="col-md-12" style="border:1px #ccc dashed">   <h4>  TRANSACTION DETAILS </h4>  </div>
+
+
+                                                         <div class="col-md-6 text-left"><h4>Service Provider</h4></div>
+                                                        <div class="col-md-6"><h6 style="line-height: 30px;">Airtel</h6></div>
+
+                                                         <div class="col-md-6 text-left"><h4>Service Number</h4></div>
+                                                        <div class="col-md-6"><h6 style="line-height: 30px;">9866236990</h6></div>
+
+                                                        <div class="col-md-6 text-left"><h4>Transaction ID</h4></div>
+                                                        <div class="col-md-6"><h6 style="line-height: 30px;">188246929</h6></div>
+
+                                                   <div class="col-md-6 text-left"><h4>Operator Reference Number</h4></div>
+                                                        <div class="col-md-6"><h6 style="line-height: 30px;">AP0805144912000287</h6></div>
+
+                                                   <div class="col-md-6 text-left"><h4>Time</h4></div>
+                                                        <div class="col-md-6"><h6 style="line-height: 30px;">	05-08-2017 02:49:23 PM</h6></div>
+                                                    <div class="col-md-6 text-left"><h4>Amount</h4></div>
+                                                        <div class="col-md-6"><h6 style="line-height: 30px;">Rs.450</h6></div>
+
+
+                                                      <div class="col-md-12" style="border-top:1px #ccc dashed">
+
+                                                        <div class="col-md-6 text-left" style="padding-left:0;"> <h4 style="font-size:20px;">  Total</h4></div>
+                                                         <div class="col-md-6"><h4 style="line-height: 30px;font-size:20px;">Rs.450</h4></div>
+                                                          </div>
+
+
+													</div>
+
+													<div class="modal-footer" style="text-align:center;">
+
+													<p>	indus it designs
+garuda crest,gunadhala,hp gas lane </p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+<div class="modal fade in" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+														<h5 class="modal-title" id="exampleModalLabel1">Raise a Recharge Dispute Ticket</h5>
+													</div>
+													<div class="modal-body">
+														<p>The transaction is Success at operator end with Transaction ID AP0805144912000287 Please call the customer care with following details</p>
+                                                        <hr style="margin-bottom:10px;">
+
+                                                        <div class="col-md-4"><h4>Transaction ID</h4></div>
+                                                        <div class="col-md-8"><h6 style="line-height: 30px;">65654343223</h6></div>
+
+                                                         <div class="col-md-4"><h4>Time</h4></div>
+                                                        <div class="col-md-8"><h6 style="line-height: 30px;">65654343223</h6></div>
+
+                                                         <div class="col-md-4"><h4>Amount</h4></div>
+                                                        <div class="col-md-8"><h6 style="line-height: 30px;">65654343223</h6></div>
+
+
+
+													</div>
+
+													<div class="modal-footer" style="text-align:center;">
+
+														<button type="button" class="btn btn-primary" style="padding: 3px 15px; margin-top:10px;">RAISE A DISPUTE</button>
+													</div>
+												</div>
+											</div>
+										</div>

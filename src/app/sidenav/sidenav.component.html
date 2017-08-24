@@ -1,3 +1,72 @@
-<p>
-  sidenav works!
-</p>
+<div class="fixed-sidebar-left">
+				<ul class="nav navbar-nav side-nav nicescroll-bar">
+						<li class="navigation-header"> <span>Main</span> <i class="zmdi zmdi-more"></i> </li>
+						<li> <a href="index.html" data-toggle="collapse" data-target="#dashboard_dr">
+								<div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">Dashboard</span></div>
+								<div class="clearfix"></div>
+								</a> </li>
+						<li> <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr">
+								<div class="pull-left"><i class="zmdi zmdi-shopping-basket mr-20"></i><span class="right-nav-text">Recharge Reports</span></div>
+								<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+								<div class="clearfix"></div>
+								</a>
+								<ul id="ecom_dr" class="collapse collapse-level-1">
+										<li> <a [routerLink]="['transaction_rp']">Transaction Report</a> </li>
+										<li> <a href="SuccesReport.html">Success Report</a> </li>
+										<li> <a href="FailedReport.html">Failed Report</a> </li>
+								</ul>
+						</li>
+						<li> <a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr">
+								<div class="pull-left"><i class="zmdi zmdi-apps mr-20"></i><span class="right-nav-text">Payment </span></div>
+								<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+								<div class="clearfix"></div>
+								</a>
+								<ul id="app_dr" class="collapse collapse-level-1">
+										<li> <a href="AddPayments.html">Add Payment</a> </li>
+										<li> <a href="PaymentReport.html">Payment Report</a> </li>
+								</ul>
+						</li>
+						<li> <a href="javascript:void(0);" data-toggle="collapse" data-target="#RegistCom">
+								<div class="pull-left"><i class="zmdi zmdi-flag mr-20"></i><span class="right-nav-text">Register Complaint</span></div>
+								<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+								<div class="clearfix"></div>
+								</a>
+								<ul id="RegistCom" class="collapse collapse-level-1">
+										<li> <a href="IssueComplants.html">Issues Complaint</a> </li>
+										<li> <a href="ComplantsList.html">Complaint List Report</a> </li>
+								</ul>
+						</li>
+						<li> <a href="MyComition.html" data-toggle="collapse" data-target="#ui_dr">
+								<div class="pull-left"><i class="zmdi zmdi-smartphone-setup mr-20"></i><span class="right-nav-text">My Commision</span></div>
+								<div class="clearfix"></div>
+								</a> </li>
+						<li> <a  href="PlanPricing.html" data-toggle="collapse" data-target="#form_dr">
+								<div class="pull-left"><i class="zmdi zmdi-edit mr-20"></i><span class="right-nav-text">API Plan and Pricing</span></div>
+								<div class="clearfix"></div>
+								</a> </li>
+						<li> <a href="Services.html" data-toggle="collapse" data-target="#chart_dr">
+								<div class="pull-left"><i class="zmdi zmdi-chart-donut mr-20"></i><span class="right-nav-text">Services </span></div>
+								<div class="clearfix"></div>
+								</a> </li>
+						<li> <a href="rechargeForm.html" data-toggle="collapse" data-target="#icon_dr">
+								<div class="pull-left"><i class="zmdi zmdi-iridescent mr-20"></i><span class="right-nav-text">Contact Us</span></div>
+								<div class="clearfix"></div>
+								</a> </li>
+						<li>
+								<hr class="light-grey-hr mb-10">
+						</li>
+						<li class="navigation-header"> <span>Downloads</span> <i class="zmdi zmdi-more"></i> </li>
+						<li> <a href="javascript:void(0);">
+								<div class="pull-left"><i class="zmdi zmdi-book mr-20"></i><span class="right-nav-text">Operaters</span></div>
+								<div class="clearfix"></div>
+								</a> </li>
+						<li> <a href="javascript:void(0);">
+								<div class="pull-left"><i class="zmdi zmdi-smartphone-android zmd-fw mr-20"></i><span class="right-nav-text">Android App</span></div>
+								<div class="clearfix"></div>
+								</a> </li>
+						<li> <a href="javascript:void(0);">
+								<div class="pull-left"><i class="zmdi zmdi-smartphone-iphone zmd-fw mr-20"></i><span class="right-nav-text">IOS App</span></div>
+								<div class="clearfix"></div>
+								</a> </li>
+				</ul>
+		</div>
