@@ -20,6 +20,8 @@ import { DashprofileComponent } from './dashprofile/dashprofile.component';
 import { DashgraphComponent } from './dashgraph/dashgraph.component';
 import { DashnewsComponent } from './dashnews/dashnews.component';
 import { DashwallettransaComponent } from './dashwallettransa/dashwallettransa.component';
+import { SuccessreportComponent } from './successreport/successreport.component';
+import { FailedreportComponent } from './failedreport/failedreport.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main_dash', pathMatch: 'full' },
@@ -36,7 +38,8 @@ const routes: Routes = [
   { path: 'dashgraph',  component: DashgraphComponent},
   { path: 'dashnews',  component: DashnewsComponent},
   { path: 'dashwallettransa',  component: DashwallettransaComponent},
-
+  { path: 'SuccesReport',  component: SuccessreportComponent},
+  { path: 'FailedReport',  component: FailedreportComponent},
 ];
 
 @NgModule({
@@ -54,7 +57,9 @@ const routes: Routes = [
     DashprofileComponent,
     DashgraphComponent,
     DashnewsComponent,
-    DashwallettransaComponent
+    DashwallettransaComponent,
+    SuccessreportComponent,
+    FailedreportComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes),BrowserAnimationsModule,MaterialModule,
