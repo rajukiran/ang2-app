@@ -20,6 +20,8 @@ import { DashprofileComponent } from './dashprofile/dashprofile.component';
 import { DashgraphComponent } from './dashgraph/dashgraph.component';
 import { DashnewsComponent } from './dashnews/dashnews.component';
 import { DashwallettransaComponent } from './dashwallettransa/dashwallettransa.component';
+import { ExcelService } from './transaction-report/excel.service';
+import { PdfComponent } from './pdf/pdf.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main_dash', pathMatch: 'full' },
@@ -54,12 +56,13 @@ const routes: Routes = [
     DashprofileComponent,
     DashgraphComponent,
     DashnewsComponent,
-    DashwallettransaComponent
+    DashwallettransaComponent,
+    PdfComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes),BrowserAnimationsModule,MaterialModule,
   ],
-  providers: [],
+  providers: [ExcelService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
