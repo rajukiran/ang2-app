@@ -2,7 +2,7 @@
 				<ul class="nav navbar-nav side-nav nicescroll-bar">
 						<li class="navigation-header"> <span>Main</span> <i class="zmdi zmdi-more"></i> </li>
 						<li> <a href="index.html" data-toggle="collapse" data-target="#dashboard_dr">
-								<div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">Dashboard</span></div>
+								<div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text"><a [routerLink]="['main_dash']" style="color: #212121; text-decoratin:none;">Dashboard</a></span></div>
 								<div class="clearfix"></div>
 								</a> </li>
 						<li> <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr">
@@ -22,8 +22,8 @@
 								<div class="clearfix"></div>
 								</a>
 								<ul id="app_dr" class="collapse collapse-level-1">
-										<li> <a href="AddPayments.html">Add Payment</a> </li>
-										<li> <a href="PaymentReport.html">Payment Report</a> </li>
+										<li> <a [routerLink]="['AddPayment']">Add Payment</a> </li>
+										<li> <a [routerLink]="['PaymentReport']">Payment Report</a> </li>
 								</ul>
 						</li>
 						<li> <a href="javascript:void(0);" data-toggle="collapse" data-target="#RegistCom">
@@ -32,8 +32,8 @@
 								<div class="clearfix"></div>
 								</a>
 								<ul id="RegistCom" class="collapse collapse-level-1">
-										<li> <a href="IssueComplants.html">Issues Complaint</a> </li>
-										<li> <a href="ComplantsList.html">Complaint List Report</a> </li>
+										<li> <a [routerLink]="['IssueComplants']">Issues Complaint</a> </li>
+										<li> <a [routerLink]="['ComplantList']">Complaint List Report</a> </li>
 								</ul>
 						</li>
 						<li> <a href="MyComition.html" data-toggle="collapse" data-target="#ui_dr">

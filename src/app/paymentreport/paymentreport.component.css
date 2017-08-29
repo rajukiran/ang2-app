@@ -1,0 +1,4 @@
+.nav-tabs>li.active>a{ border:none;}
+
+.nav>li>a:focus, .nav>li>a:hover{border-bottom: #2879ff 2px solid !important; background: none;}
+.nav-tabs>li>a{ border: none;}
