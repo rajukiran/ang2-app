@@ -1,0 +1,33 @@
+<div class="category-grp">
+    <div class="form-group">
+        <div class="col-md-6">
+            <input type="text" [(ngModel)]="searchText" class="form-control" placeholder="Search By Category" />
+        </div>
+    </div>
+    <div class="col-md-12">
+        <table class="table table-responsive table-hover">
+            <tr>
+                <th class="pointer" (click)="sort('CategoryID')">Category ID<i class="fa"
+    [ngClass]="{'fa-sort': column != 'CategoryID',
+                        'fa-sort-asc': (column == 'CategoryID' && !isDesc),
+                        'fa-sort-desc': (column == 'CategoryID' && isDesc) }"
+    aria-hidden="true"> </i></th>
+                <th class="pointer" (click)="sort('CategoryName')">Category<i class="fa"
+    [ngClass]="{'fa-sort': column != 'CategoryID',
+                        'fa-sort-asc': (column == 'CategoryID' && !isDesc),
+                        'fa-sort-desc': (column == 'CategoryID' && isDesc) }"
+    aria-hidden="true"> </i></th>
+                <th class="pointer" (click)="sort('Description')">Description<i class="fa"
+    [ngClass]="{'fa-sort': column != 'CategoryID',
+                        'fa-sort-asc': (column == 'CategoryID' && !isDesc),
+                        'fa-sort-desc': (column == 'CategoryID' && isDesc) }"
+    aria-hidden="true"> </i></th>
+            </tr>
+            <tr *ngFor="let item of records | category: searchText">
+                <td>{{item.CategoryID}}</td>
+                <td>{{item.CategoryName}}</td>
+                <td>{{item.Description}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
