@@ -4,10 +4,11 @@ import { CategoryPipe } from './category.pipe';
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css'],
-  providers: [CategoryPipe]
+  styleUrls: ['./category.component.css']
 })
 export class CategoryComponent implements OnInit {
+
+  direction: number;
 
   records: Array<any>;
   isDesc: boolean = false;
@@ -35,16 +36,16 @@ export class CategoryComponent implements OnInit {
         this.column = property;
         let direction = this.isDesc ? 1 : -1;
 
-        this.records.sort(function(a, b){
-            if(a[property] < b[property]){
-                return -1 * direction;
-            }
-            else if( a[property] > b[property]){
-                return 1 * direction;
-            }
-            else{
-                return 0;
-            }
-        });
+        // this.records.sort(function(a, b){
+        //     if(a[property] < b[property]){
+        //         return -1 * direction;
+        //     }
+        //     else if( a[property] > b[property]){
+        //         return 1 * direction;
+        //     }
+        //     else{
+        //         return 0;
+        //     }
+        // });
     };
 }

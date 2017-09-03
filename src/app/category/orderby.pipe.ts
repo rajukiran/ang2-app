@@ -4,6 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class OrderByPipe implements PipeTransform {
 
     transform(records: Array<any>, args?: any): any {
+      console.log("In order by transform method")
         return records.sort(function(a, b){
             if(a[args.property] < b[args.property]){
                 return -1 * args.direction;

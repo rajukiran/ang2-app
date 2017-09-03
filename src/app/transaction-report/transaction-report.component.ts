@@ -31,17 +31,16 @@ export class TransactionReportComponent implements OnInit {
 
   public download() {
 
-    let pdf = new jsPDF();
-    let options = {
+    const pdf = new jsPDF();
+    const options = {
       pagesplit: true
     };
     pdf.addHTML(this.el.nativeElement, 0, 0, options, () => {
-      pdf.save("test.pdf");
+      pdf.save('test.pdf');
     });
   }
 
   testRequest() {
-    console.log("In callback");
     console.log(this.sRS.testRequest());
   }
 

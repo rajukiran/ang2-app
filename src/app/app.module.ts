@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, Pipe, PipeTransform } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from "@angular/material";
 import { RestangularModule, Restangular } from 'ng2-restangular';
 import {Http, Headers, URLSearchParams, HttpModule} from '@angular/http';
+import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CategoryPipe } from './category/category.pipe';
 import { OrderByPipe } from './category/orderby.pipe';
-
+import { Configuration } from './app.configuration';
+import { CurrentUserService } from './core/services/current-user.service';
+import { StorageService } from './core/services/storage.service';
+// import { Pipe, PipeTransform } from '@angular/core';
 import "hammerjs";
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -29,6 +33,7 @@ import { PdfComponent } from './pdf/pdf.component';
 import { SuccessreportComponent } from './successreport/successreport.component';
 import { TReportComponent } from './t-report/t-report.component';
 import { CategoryComponent } from './category/category.component';
+// import { DataService } from '/app.api';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main_dash', pathMatch: 'full' },
@@ -48,11 +53,6 @@ const routes: Routes = [
   { path: 's_report',  component: SuccessreportComponent},
   { path: 'category',  component: CategoryComponent},
 ];
-
-export function RestangularConfigFactory (RestangularProvider) {
-  RestangularProvider.setBaseUrl('http://localhost:8080/SpringSecurityOAuth2Example');
-  RestangularProvider.setDefaultHeaders({'Authorization': 'Basic bXktdHJ1c3RlZC1jbGllbnQ6c2VjcmV0', });
-}
 
 @NgModule({
   declarations: [
@@ -75,13 +75,13 @@ export function RestangularConfigFactory (RestangularProvider) {
     TReportComponent,
     CategoryComponent,
     CategoryPipe,
-    OrderByPipe
+    OrderByPipe,
   ],
   imports: [
-    BrowserModule, FormsModule, RouterModule.forRoot(routes, RestangularConfigFactory),BrowserAnimationsModule,MaterialModule,HttpModule
+    BrowserModule, FormsModule, RouterModule.forRoot(routes),BrowserAnimationsModule,MaterialModule,HttpModule, HttpClientModule
   ],
-  providers: [ExcelService],
-  bootstrap: [AppComponent]
+  providers: [ExcelService, Configuration, CurrentUserService, StorageService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {
 
